@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Generate New Random Meal</h1>
+<div mat-dialog-content>If you want to change Meal options, you can click generate button.It will provide new generate
+    meal plan with given calories.</div>
+<mat-form-field>
+    <mat-label>Set Calories.</mat-label>
+    <input matInput [(ngModel)]="totalCalories">
+</mat-form-field>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" (click)="genRandomOnExistingId()" >Generate</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+</div>

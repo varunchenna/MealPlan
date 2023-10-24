@@ -1,0 +1,35 @@
+/* .radio-inline{
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+#height {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+h3{
+    color: rgb(67, 123, 3);
+}
+
+/* img{
+    width: 240px;
+    height: 240px;
+} */
+
+/* style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" */
+
+/* .img-fluid{
+    border-radius: ;
+} */

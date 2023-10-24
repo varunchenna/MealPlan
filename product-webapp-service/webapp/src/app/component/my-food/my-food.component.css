@@ -1,0 +1,74 @@
+/* Styling for the search container */
+
+.search-container {
+    margin-left: 15%;
+    width: 70%;
+    /* background-color: #171718; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing as needed */
+  }
+  
+  /* Styling for the search input */
+  /* .search-input { */
+    /* flex: 1; Allow the input to expand and take available space */
+    /* padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; */
+  /* } */
+
+  /* Styling for the search input */
+.search-input {
+    flex: 1; /* Allow the input to expand and take available space */
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and box-shadow */
+  
+    /* Add placeholder styling */
+    ::placeholder {
+      color: #777; /* Placeholder text color */
+    }
+  
+    /* Add focus styling */
+    &:focus {
+      border-color: #007bff; /* Highlight border on focus */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+    }
+  }
+  
+  
+  /* Styling for the search button */
+  .search-button {
+    margin-left: 10px;
+    padding: 13px 23px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  header {
+    /* background-color: #007bff; */
+    color: #777;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  

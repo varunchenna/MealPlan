@@ -1,0 +1,688 @@
+2023-09-27 09:24:17 [main] INFO  i.s.n.NotificationServiceApplication - Starting NotificationServiceApplication using Java 17.0.8 with PID 908 (C:\Users\varun\angular\Meal-Planner\mealplan\product-webapp-service\Notification-service\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-09-27 09:24:17 [main] INFO  i.s.n.NotificationServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:24:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27 09:24:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 230 ms. Found 1 JPA repository interfaces.
+2023-09-27 09:24:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-09-27 09:24:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-27 09:24:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-27 09:24:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-27 09:24:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5675 ms
+2023-09-27 09:24:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:24:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-27 09:24:24 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-09-27 09:24:24 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:24:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27 09:24:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-09-27 09:24:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5731caaf
+2023-09-27 09:24:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-09-27 09:24:29 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-27 09:24:29 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:24:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:24:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27 09:24:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27 09:24:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-09-27 09:24:32 [main] INFO  i.s.n.NotificationServiceApplication - Started NotificationServiceApplication in 17.187 seconds (process running for 19.734)
+2023-09-27 09:25:30 [http-nio-8452-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:25:30 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-27 09:25:30 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 78 ms
+2023-09-27 09:25:31 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch,n1_0.title from notification n1_0 left join meal m1_0 on m1_0.meal_id=n1_0.notify_id where n1_0.id=?
+2023-09-27 09:25:33 [http-nio-8452-exec-2] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch,n1_0.title from notification n1_0 left join meal m1_0 on m1_0.meal_id=n1_0.notify_id where n1_0.id=?
+2023-09-27 09:25:40 [http-nio-8452-exec-6] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch,n1_0.title from notification n1_0 left join meal m1_0 on m1_0.meal_id=n1_0.notify_id where n1_0.id=?
+2023-09-27 09:25:45 [http-nio-8452-exec-7] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch,n1_0.title from notification n1_0 left join meal m1_0 on m1_0.meal_id=n1_0.notify_id where n1_0.id=?
+2023-09-27 09:26:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27 09:26:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-09-27 09:26:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-09-27 09:34:51 [main] INFO  i.s.n.NotificationServiceApplication - Starting NotificationServiceApplication using Java 17.0.8 with PID 13628 (C:\Users\varun\angular\Meal-Planner\mealplan\product-webapp-service\Notification-service\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-09-27 09:34:51 [main] INFO  i.s.n.NotificationServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-27 09:34:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-27 09:34:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 821 ms. Found 1 JPA repository interfaces.
+2023-09-27 09:34:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-09-27 09:34:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-27 09:34:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-27 09:34:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-27 09:34:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6466 ms
+2023-09-27 09:35:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-27 09:35:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-27 09:35:00 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-09-27 09:35:00 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:35:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-27 09:35:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-09-27 09:35:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dd91ffc
+2023-09-27 09:35:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-09-27 09:35:02 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-27 09:35:03 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-27 09:35:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-27 09:35:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27 09:35:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27 09:35:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-09-27 09:35:09 [main] INFO  i.s.n.NotificationServiceApplication - Started NotificationServiceApplication in 19.664 seconds (process running for 24.602)
+2023-09-27 09:35:19 [http-nio-8452-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 09:35:19 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-27 09:35:19 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2023-09-27 09:35:20 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch,n1_0.title from notification n1_0 left join meal m1_0 on m1_0.meal_id=n1_0.notify_id where n1_0.id=?
+2023-09-27 09:35:24 [http-nio-8452-exec-3] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch,n1_0.title from notification n1_0 left join meal m1_0 on m1_0.meal_id=n1_0.notify_id where n1_0.id=?
+2023-09-27 09:40:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27 09:40:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-09-27 09:40:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 11:04:47 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 6752 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 11:04:47 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 11:04:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 11:04:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
+2023-10-06 11:04:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 11:04:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 11:04:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 11:04:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 11:04:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2426 ms
+2023-10-06 11:04:50 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 11:04:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 11:04:50 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 11:04:50 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 11:04:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 11:04:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 11:04:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e7bb00e
+2023-10-06 11:04:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 11:04:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 11:04:54 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 11:04:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 11:04:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 11:04:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 11:04:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 11:04:55 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 9.744 seconds (process running for 11.483)
+2023-10-06 11:05:45 [http-nio-8452-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 11:05:47 [http-nio-8452-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 11:05:47 [http-nio-8452-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 205 ms
+2023-10-06 11:05:50 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.body,n1_0.notify_id,n1_0.title from notification n1_0
+2023-10-06 11:05:50 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch from meal m1_0 where m1_0.meal_id=?
+2023-10-06 11:05:50 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch from meal m1_0 where m1_0.meal_id=?
+2023-10-06 11:05:50 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select m1_0.meal_id,m1_0.breakfast,m1_0.dinner,m1_0.lunch from meal m1_0 where m1_0.meal_id=?
+2023-10-06 11:06:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 11:06:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 11:06:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 12:36:47 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 19852 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 12:36:47 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 12:36:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 12:36:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
+2023-10-06 12:36:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 12:36:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 12:36:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 12:36:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 12:36:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3738 ms
+2023-10-06 12:36:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 12:36:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 12:36:52 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 12:36:54 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 12:36:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 12:36:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 12:37:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d66502
+2023-10-06 12:37:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 12:37:00 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 12:37:01 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 12:37:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 12:37:08 [main] DEBUG org.hibernate.SQL - create table notification (id integer not null, breakfast varchar(255) not null, dinner varchar(255) not null, lunch varchar(255) not null, body varchar(255) not null, title varchar(255) not null, primary key (id)) engine=InnoDB
+2023-10-06 12:37:08 [main] DEBUG org.hibernate.SQL - create table notification_seq (next_val bigint) engine=InnoDB
+2023-10-06 12:37:08 [main] DEBUG org.hibernate.SQL - insert into notification_seq values ( 1 )
+2023-10-06 12:37:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 12:37:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 12:37:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 12:37:12 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 26.867 seconds (process running for 29.158)
+2023-10-06 12:40:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 12:40:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 12:40:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 12:40:43 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 4844 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 12:40:43 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 12:40:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 12:40:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interfaces.
+2023-10-06 12:40:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 12:40:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 12:40:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 12:40:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 12:40:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5579 ms
+2023-10-06 12:40:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 12:40:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 12:40:49 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 12:40:49 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 12:40:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 12:40:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 12:40:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@241fc278
+2023-10-06 12:40:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 12:40:51 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 12:40:51 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 12:40:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 12:40:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 12:40:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 12:40:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 12:40:54 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 12.45 seconds (process running for 14.748)
+2023-10-06 12:41:06 [http-nio-8452-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 12:41:06 [http-nio-8452-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 12:41:06 [http-nio-8452-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2023-10-06 12:41:07 [http-nio-8452-exec-3] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 12:41:52 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 12:42:36 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 12:42:53 [http-nio-8452-exec-5] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 12:42:53 [http-nio-8452-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found] with root cause
+in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.lambda$getNotify$0(NotificationServiceImpl.java:23)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.getNotify(NotificationServiceImpl.java:22)
+	at in.stackroute.usernotifiactionservice.controller.NotificationController.Onenotificetion(NotificationController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-06 12:52:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 12:52:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 12:52:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 12:53:01 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 22732 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 12:53:01 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 12:53:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 12:53:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2023-10-06 12:53:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 12:53:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 12:53:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 12:53:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 12:53:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2068 ms
+2023-10-06 12:53:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 12:53:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 12:53:03 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 12:53:03 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 12:53:04 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 12:53:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 12:53:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e7bb00e
+2023-10-06 12:53:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 12:53:04 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 12:53:05 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 12:53:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 12:53:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 12:53:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 12:53:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 12:53:08 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 8.74 seconds (process running for 10.413)
+2023-10-06 12:53:26 [http-nio-8452-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 12:53:26 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 12:53:26 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 59 ms
+2023-10-06 12:53:30 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 12:56:25 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 12:56:26 [http-nio-8452-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found] with root cause
+in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.lambda$getNotify$0(NotificationServiceImpl.java:24)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.getNotify(NotificationServiceImpl.java:23)
+	at in.stackroute.usernotifiactionservice.controller.NotificationController.Onenotificetion(NotificationController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-06 12:57:49 [http-nio-8452-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `in.stackroute.usernotifiactionservice.model.Notification` from Array value (token `JsonToken.START_ARRAY`)]
+2023-10-06 13:00:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:00:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 13:00:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 13:01:06 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 17796 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 13:01:06 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 13:01:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 13:01:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2023-10-06 13:01:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 13:01:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 13:01:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 13:01:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 13:01:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2578 ms
+2023-10-06 13:01:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 13:01:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 13:01:09 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 13:01:10 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:01:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 13:01:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 13:01:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b4954b2
+2023-10-06 13:01:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 13:01:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 13:01:11 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:01:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 13:01:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:01:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 13:01:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 13:01:14 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 9.816 seconds (process running for 11.648)
+2023-10-06 13:01:25 [http-nio-8452-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 13:01:25 [http-nio-8452-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 13:01:25 [http-nio-8452-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2023-10-06 13:01:25 [http-nio-8452-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `in.stackroute.usernotifiactionservice.model.Notification` from Array value (token `JsonToken.START_ARRAY`)]
+2023-10-06 13:01:43 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 13:01:54 [http-nio-8452-exec-5] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 13:02:15 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:02:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 13:02:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 13:02:32 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 19024 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 13:02:32 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 13:02:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 13:02:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interfaces.
+2023-10-06 13:02:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 13:02:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 13:02:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 13:02:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 13:02:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2254 ms
+2023-10-06 13:02:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 13:02:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 13:02:35 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 13:02:35 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:02:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 13:02:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 13:02:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@655621fd
+2023-10-06 13:02:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 13:02:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 13:02:36 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:02:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 13:02:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:02:40 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 13:02:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 13:02:41 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 9.174 seconds (process running for 11.875)
+2023-10-06 13:02:50 [http-nio-8452-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 13:02:50 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 13:02:50 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-10-06 13:02:51 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 13:04:04 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 13:04:04 [http-nio-8452-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found] with root cause
+in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.lambda$getNotify$0(NotificationServiceImpl.java:24)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.getNotify(NotificationServiceImpl.java:23)
+	at in.stackroute.usernotifiactionservice.controller.NotificationController.Onenotificetion(NotificationController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-06 13:04:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:04:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 13:04:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 13:08:39 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 17724 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 13:08:39 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 13:08:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 13:08:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interfaces.
+2023-10-06 13:08:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 13:08:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 13:08:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 13:08:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 13:08:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3098 ms
+2023-10-06 13:08:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 13:08:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 13:08:45 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 13:08:45 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:08:46 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 13:08:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 13:08:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b451bf4
+2023-10-06 13:08:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 13:08:47 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 13:08:48 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:08:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 13:08:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:08:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 13:08:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 13:08:52 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 14.114 seconds (process running for 20.045)
+2023-10-06 13:09:10 [http-nio-8452-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 13:09:10 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 13:09:10 [http-nio-8452-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 79 ms
+2023-10-06 13:09:12 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 13:10:48 [http-nio-8452-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `in.stackroute.usernotifiactionservice.model.Notification` from Array value (token `JsonToken.START_ARRAY`)]
+2023-10-06 13:11:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:11:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 13:11:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 13:46:40 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 9576 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 13:46:40 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 13:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 13:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-10-06 13:46:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 13:46:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 13:46:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 13:46:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 13:46:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2624 ms
+2023-10-06 13:46:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 13:46:43 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 13:46:43 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 13:46:43 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:46:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 13:46:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 13:46:44 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32b112a1
+2023-10-06 13:46:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 13:46:44 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 13:46:44 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 13:46:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 13:46:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 13:46:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 13:46:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 13:46:46 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 7.421 seconds (process running for 11.556)
+2023-10-06 13:51:26 [http-nio-8452-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 13:51:26 [http-nio-8452-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 13:51:26 [http-nio-8452-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 85 ms
+2023-10-06 13:51:27 [http-nio-8452-exec-2] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 13:51:36 [http-nio-8452-exec-3] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 13:53:03 [http-nio-8452-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `in.stackroute.usernotifiactionservice.model.Notification` from Array value (token `JsonToken.START_ARRAY`)]
+2023-10-06 13:53:23 [http-nio-8452-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `in.stackroute.usernotifiactionservice.model.Notification` from Array value (token `JsonToken.START_ARRAY`)]
+2023-10-06 13:56:33 [http-nio-8452-exec-9] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 13:56:33 [http-nio-8452-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found] with root cause
+in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.lambda$getNotify$0(NotificationServiceImpl.java:24)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.getNotify(NotificationServiceImpl.java:23)
+	at in.stackroute.usernotifiactionservice.controller.NotificationController.Onenotificetion(NotificationController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-06 13:56:34 [http-nio-8452-exec-10] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 13:56:34 [http-nio-8452-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found] with root cause
+in.stackroute.usernotifiactionservice.exceptions.NotificationNotFoundException: Notification with id not found
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.lambda$getNotify$0(NotificationServiceImpl.java:24)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at in.stackroute.usernotifiactionservice.service.NotificationServiceImpl.getNotify(NotificationServiceImpl.java:23)
+	at in.stackroute.usernotifiactionservice.controller.NotificationController.Onenotificetion(NotificationController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-06 13:57:43 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 13:57:48 [http-nio-8452-exec-3] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:02:27 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:02:32 [http-nio-8452-exec-7] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:02:42 [http-nio-8452-exec-9] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:02:47 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:08:46 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 14:08:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 14:08:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 14:09:02 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 20124 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 14:09:02 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 14:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 14:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2023-10-06 14:09:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 14:09:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 14:09:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 14:09:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 14:09:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4029 ms
+2023-10-06 14:09:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 14:09:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 14:09:06 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 14:09:06 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 14:09:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 14:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 14:09:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32b112a1
+2023-10-06 14:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 14:09:08 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 14:09:08 [main] INFO  o.h.id.enhanced.TableGenerator - HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
+2023-10-06 14:09:08 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 14:09:09 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 14:09:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 14:09:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 14:09:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 14:09:10 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 9.014 seconds (process running for 10.936)
+2023-10-06 14:10:29 [http-nio-8452-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 14:10:29 [http-nio-8452-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 14:10:29 [http-nio-8452-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 114 ms
+2023-10-06 14:10:30 [http-nio-8452-exec-3] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0
+2023-10-06 14:10:40 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:10:49 [http-nio-8452-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `in.stackroute.usernotifiactionservice.model.Notification` from Array value (token `JsonToken.START_ARRAY`)]
+2023-10-06 14:10:56 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 14:10:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 14:10:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-06 14:35:49 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Starting UserNotifiactionServiceApplication using Java 17.0.8 with PID 20212 (C:\Users\varun\angular\Meal-Planner\mealplan\UserNotifiactionService\target\classes started by varun in C:\Users\varun\angular\Meal-Planner\mealplan)
+2023-10-06 14:35:49 [main] INFO  i.s.u.UserNotifiactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-06 14:35:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06 14:35:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 240 ms. Found 1 JPA repository interfaces.
+2023-10-06 14:36:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8452 (http)
+2023-10-06 14:36:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-06 14:36:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06 14:36:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-06 14:36:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15399 ms
+2023-10-06 14:36:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06 14:36:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06 14:36:06 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-10-06 14:36:08 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 14:36:09 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06 14:36:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-06 14:36:11 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@657b3b
+2023-10-06 14:36:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-06 14:36:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-06 14:36:13 [main] INFO  o.h.id.enhanced.TableGenerator - HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
+2023-10-06 14:36:13 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-10-06 14:36:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06 14:36:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 14:37:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06 14:38:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8452 (http) with context path ''
+2023-10-06 14:38:36 [main] INFO  i.s.u.UserNotifiactionServiceApplication - Started UserNotifiactionServiceApplication in 170.348 seconds (process running for 174.826)
+2023-10-06 14:39:43 [http-nio-8452-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06 14:39:43 [http-nio-8452-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-06 14:39:43 [http-nio-8452-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 432 ms
+2023-10-06 14:39:48 [http-nio-8452-exec-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:39:48 [http-nio-8452-exec-2] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:39:50 [http-nio-8452-exec-6] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:41:00 [http-nio-8452-exec-7] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:41:02 [http-nio-8452-exec-5] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:41:29 [http-nio-8452-exec-10] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:41:32 [http-nio-8452-exec-4] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.breakfast,n1_0.dinner,n1_0.lunch,n1_0.body,n1_0.title from notification n1_0 where n1_0.id=?
+2023-10-06 14:58:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06 14:58:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-06 14:58:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

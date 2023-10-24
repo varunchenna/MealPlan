@@ -1,0 +1,10 @@
+server:
+  port: 8000 # Port on which the application will run
+spring:
+  application:
+    name: Recipe
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: recipe

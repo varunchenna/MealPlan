@@ -1,0 +1,196 @@
+<form #userForm="ngForm" (ngSubmit)="findCalories(userForm)">
+    <section class="h-100 bg-dark">
+        <div *ngIf="!showResult" class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                        <div class="row g-0">
+                            <div class="col-xl-6 d-none d-xl-block">
+                                <img src="assets/photo1696410811.jpeg" alt="Sample photo" class="img-fluid"
+                                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;">
+                            </div>
+                            <!-- <div  class="col-xl-6 d-none d-xl-block">
+                                <img src="assets/form-img.png">
+                            </div> -->
+                            <div class="col-xl-6">
+
+                                <div class="card-body p-md-5 text-black">
+                                    <h3 class="mb-5 text-uppercase">Create My Diet Meal Plan</h3>
+
+                                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                        <h6 class="mb-0 me-4">Gender: <span> </span> </h6>
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                                                value="female" [(ngModel)]="dieter.gender" required />
+                                            <label class="form-check-label" for="femaleGender">Female</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="gender" id="maleGender"
+                                                value="male" [(ngModel)]="dieter.gender" required />
+                                            <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0">
+                                            <input class="form-check-input" type="radio" name="gender" id="otherGender"
+                                                value="option3" [(ngModel)]="dieter.gender" required />
+                                            <label class="form-check-label" for="otherGender">Other</label>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <div>
+                                        <select name="height" id="height">
+                                            <script>
+                                                // JavaScript to populate the select box
+                                                const select = document.getElementById('height');
+    
+                                                for (let foot = 3; foot <= 7; foot++) {
+                                                    for (let inches = 0; inches <= 11; inches++) {
+                                                        const option = document.createElement('option');
+                                                        if (inches === 0) {
+                                                            option.value = `${foot} feet`;
+                                                            option.textContent = `${foot} feet`;
+                                                        } else {
+                                                            option.value = `${foot} feet ${inches} inches`;
+                                                            option.textContent = `${foot} feet ${inches} inches`;
+                                                        }
+                                                        select.appendChild(option);
+                                                    }
+                                                }
+                                            </script>
+                                        </select>
+                                    </div> -->
+                                    <div class="row">
+                                        <!-- <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label for="birth_date">Birth Date: </label>
+                                                <input type="date" id="birth_date" class="form-control form-control-lg" />
+                                            </div>
+                                        </div> -->
+                                        <div class="col-md-12 mb-4">
+                                            <div class="form-outline">
+                                                <label for="age">Age:</label>
+                                                <input type="number" id="age" class="form-control form-control-lg"
+                                                    name="age" [(ngModel)]="dieter.age" placeholder="in year" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label for="weight">Enter your weight (in kg):</label>
+                                                <input type="number" id="weight" class="form-control form-control-lg"
+                                                    name="weight" [(ngModel)]="dieter.weight" placeholder="e.g., 70 kg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label for="height">Enter your height (in ft):</label>
+                                                <input type="number" id="height" class="form-control form-control-lg"
+                                                    name="height" [(ngModel)]="dieter.height"
+                                                    placeholder="e.g., 5.9 ft">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <span>Activity level? </span>
+                                            <select class="select" [(ngModel)]="dieter.activityLevel"
+                                                name="activityLevel">
+                                                <option value="sedentary">Sedentary</option>
+                                                <option value="lightly active">Lightly Active</option>
+                                                <option value="moderate active">Moderately Active</option>
+                                                <option value="very active">Very Active</option>
+                                                <option value="super active">Super Active</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <span>Goal? </span>
+                                            <select class="select" [(ngModel)]="dieter.weightGoal" name="weightGoal">
+                                                <option value="lose">Lose fat</option>
+                                                <option value="gain">Gain fat</option>
+                                                <option value="maintain">Maintain</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                        <h6 class="mb-0 me-5">Main(No.of meals you want): </h6>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="mealRadioOptions"
+                                                id="meal-1" value="1" [(ngModel)]="dieter.mainMeals_No" />
+                                            <label class="form-check-label" for="meal-1">1</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="mealRadioOptions"
+                                                id="meal-2" value="2" [(ngModel)]="dieter.mainMeals_No" />
+                                            <label class="form-check-label" for="meal-2">2</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0">
+                                            <input class="form-check-input" type="radio" name="mealRadioOptions"
+                                                id="meal-3" value="3" [(ngModel)]="dieter.mainMeals_No" />
+                                            <label class="form-check-label" for="meal-3">3</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                                        <h6 class="mb-0 me-4">Snacks (No.of sancks you want):</h6>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="snacksRadioOptions"
+                                                id="sn-0" value="0" [(ngModel)]="dieter.snacks_No" />
+                                            <label class="form-check-label" for="sancks0">0</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="snacksRadioOptions"
+                                                id="sn-1" value="1" [(ngModel)]="dieter.snacks_No" />
+                                            <label class="form-check-label" for="sancks1">1</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0">
+                                            <input class="form-check-input" type="radio" name="snacksRadioOptions"
+                                                id="sn-2" value="2" [(ngModel)]="dieter.snacks_No" />
+                                            <label class="form-check-label" for="sancks2">2</label>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example99">Course</label>
+                                        <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                                    </div> -->
+
+
+                                    <div class="d-flex justify-content-end pt-3">
+                                        <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                        <button type="submit" class="btn btn-warning btn-lg ms-2">Generate
+                                            Calories!</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="showResult">
+            <app-get-result></app-get-result>
+        </div>
+    </section>
+</form>

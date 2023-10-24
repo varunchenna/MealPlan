@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+    /* background-image: url('../assets/form-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    
+}
+div{
+    background-image: url('/assets/notebook-amidst-pastry-fruits.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.target{
+    margin: 25vh;
+}
+h1{
+    margin-right: 190px;
+    color: rebeccapurple;
+}
+.span{
+    color:azure;
+}

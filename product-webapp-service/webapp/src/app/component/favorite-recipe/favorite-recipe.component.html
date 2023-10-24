@@ -1,0 +1,52 @@
+<!-- Search Bar -->
+<app-recipe></app-recipe>
+<div class="search-container">
+    <input type="text" placeholder="Search for recipes"  class="search-input">
+    <button  class="search-button">
+        Search
+    </button>
+</div>
+
+<header>
+    <h2>Favorite Recipe</h2>
+</header>
+
+<!-- <div *ngFor="let recipe of favRecipe"> -->
+    <!-- Display favorite recipes here -->
+    <!-- {{ recipe.strMeal }} -->
+  <!-- </div> -->
+
+
+  <!-- <div *ngFor="let recipe of favoriteRecipes">
+    <h2>{{ recipe.name }}</h2>
+    <p>{{ recipe.description }}</p>
+  </div> -->
+  
+
+
+  <div class="recipe-card-container">
+    <div class="recipe-card" *ngFor="let recipe of favoriteRecipes">
+      <div class="recipe-card-header">
+        <h3>{{ recipe.data?.strMeal }}</h3>
+      </div>
+      <div class="recipe-card-image">
+        <img [src]="recipe.data?.strMealThumb" alt="{{ recipe.data?.strMeal }}" />
+      </div>
+      <div class="recipe-card-body">
+        <p><strong>mealID:</strong> {{ recipe.data?.idMeal }}</p>
+        <p><strong>Category:</strong> {{ recipe.data?.strCategory }}</p>
+        <p><strong>Area:</strong> {{ recipe.data?.strArea }}</p>
+      </div>
+      <div class="remove-favorite">
+        <button (click)="removeFromFavorites(recipe.id)">
+          <i class="fas fa-trash"></i> Remove
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+ 

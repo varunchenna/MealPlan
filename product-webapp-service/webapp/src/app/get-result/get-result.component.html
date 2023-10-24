@@ -1,0 +1,42 @@
+<main class="container">
+    <!-- <div class="result">
+    <ul id="id" class="user">User Id: {{dieter.dieterId}}</ul>
+    <ul id="gender" class="user">Gender: {{dieter.gender}}</ul>
+    <ul id="age" class="user">Age:</ul>
+    <ul id="weight" class="user">Weight:</ul>
+    <ul id="height" class="user">Height:</ul>
+    <ul id="goal" class="user">I want to</ul>
+    <ul id="active" class="user">My daily Activity:</ul>
+    <ul id="main" class="user">No. of daily main-meals</ul>
+    <ul id="sancks" class="user">No. of daily Snacks</ul>
+</div> -->
+    <div>
+
+        <div class="target">
+            <!-- <h1>Target Calories : <span class="span">{{dieterService.userData.dailyCalories}} Kcal</span></h1> -->
+            <ul class="list-group">
+                <!-- {{json.stringify(this.dieterService)}} -->
+                <!-- <li> class="list-group-item"> <strong>Target Calories : </strong><span class="span">{{dieterService.userData.dailyCalories}}</span> Kcal</li> -->
+                <li class="list-group-item" style="background-color:rgb(0, 255, 68) ;"><strong>Target Calories : </strong><span class="span">{{dieterService.userData.dailyCalories}}</span> Kcal</li>
+                <li class="list-group-item list-group-item-primary">
+                    <strong>Id:</strong>{{dieterService.userData.dieterId}}</li>
+                <li class="list-group-item list-group-item-secondary">
+                    <strong>Gender:</strong>{{dieterService.userData.gender}}</li>
+                <li class="list-group-item list-group-item-success"><strong>Age: </strong>{{dieterService.userData.age}}
+                </li>
+                <li class="list-group-item list-group-item-danger"><strong>Weight:</strong>
+                    {{dieterService.userData.weight}}</li>
+                <li class="list-group-item list-group-item-warning"><strong>Height:</strong>
+                    {{dieterService.userData.height}}</li>
+                <li class="list-group-item list-group-item-info"><strong>I want to:</strong>
+                    {{dieterService.userData.weightGoal}}</li>
+                <li class="list-group-item list-group-item-dark"><strong>My daily Activity:</strong>
+                    {{dieterService.userData.activityLevel}}</li>
+                <li class="list-group-item list-group-item-light"><strong>No. of daily main-mrals:</strong>
+                    {{dieterService.userData.mainMeals_No}}</li>
+                <li class="list-group-item"><strong>No. of daily Snacks:</strong> {{dieterService.userData.snacks_No}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>

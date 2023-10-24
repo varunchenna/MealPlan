@@ -1,0 +1,21 @@
+server:
+  port: 8090
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password: Agni5403#
+    password: jisuHARSH#99
+    url: jdbc:mysql://localhost:3306/registrationdb?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  show-sql: true

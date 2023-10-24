@@ -1,0 +1,17 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 250px;
+  }
+  
+  .mat-nav-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .mat-nav-list a:hover {
+    background-color: #eee;
+  }
+  

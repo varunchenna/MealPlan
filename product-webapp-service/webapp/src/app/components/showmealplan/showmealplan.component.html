@@ -1,0 +1,60 @@
+<section>
+    <div class="image"></div>
+    <div class="button">
+        <button class="GenButton" (click)="genMealPlan()">GenerateMeal</button>
+        <button class="DelButton" (click)="delFromLast()">DeleteMeal</button>
+
+    </div>
+
+    <div class="container-fluid ">
+        <div class="col" *ngFor="let mealPlanPerDay of mealPlanPerDayList">
+            <h2>{{mealPlanPerDay.date}}</h2>
+            <div class="container">
+                <img src="https://thenounproject.com/api/private/icons/1940210/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+                    class="randomIcon" (click)="genRandomOnExistingId(mealPlanPerDay)" alt="">
+                <div *ngFor="let mealPlanEach of mealPlanPerDay.mealPlanEachList" class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src={{mealPlanEach.image}} alt="Image" class="img-fluid" height="136.3"
+                                width="184.11px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-text">{{mealTime[mealPlanEach.calories]}}</h3>
+                                <h4 class="card-title">{{mealPlanEach.name}}</h4>
+                                <p class="card-text">Servings: {{mealPlanEach.servings}}</p>
+                                <a class="sourceUrl" href={{mealPlanEach.sourceUrl}} target="_blank">Recipe
+                                    Information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="total-calories">Total Calories: {{round(mealPlanPerDay.totalCalories)}}</h1>
+        </div>
+        <div class="col" *ngFor="let number of (3-x) | range">
+            <h2>XXXX-XX-XX</h2>
+            <div class="container">
+                <img src="https://thenounproject.com/api/private/icons/1940210/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+                    class="randomIcon" alt="">
+                <div *ngFor="let number of 3 | range" class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="img-fluid" height="136.3" width="184.11px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-text">{{mealTime[number-1]}}</h3>
+                                <h5 class="card-title">XXX XXXX</h5>
+                                <p class="card-text">XXXX XXXXX</p>
+                                <a class="sourceUrl">Recipe Information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="total-calories">Total Calories: XXXX.XX</h1>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,153 @@
+/* Styling for the search container */
+
+.search-container {
+  margin-left: 15%;
+  width: 70%;
+  /* background-color: #171718; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add spacing as needed */
+}
+
+/* Styling for the search input */
+.search-input {
+  flex: 1; /* Allow the input to expand and take available space */
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and box-shadow */
+
+  /* Add placeholder styling */
+  ::placeholder {
+    color: #777; /* Placeholder text color */
+  }
+
+  /* Add focus styling */
+  &:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+  }
+}
+
+
+/* Styling for the search button */
+.search-button {
+  margin-left: 10px;
+  padding: 13px 23px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+header {
+  /* background-color: #007bff; */
+  color: #777;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 10px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative; /* Add this to enable absolute positioning */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Style for the "Read More" button */
+.read-more {
+  position: absolute;
+  bottom: 10px; /* Adjust the bottom spacing as needed */
+  right: 10px; /* Adjust the right spacing as needed */
+}
+
+
+
+
+
+/* Styling for the pagination controls */
+pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add spacing as needed */
+}
+
+/* Styling for pagination links */
+.pagination a {
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the active page link */
+.pagination .current {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Hover effect for pagination links */
+.pagination a:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

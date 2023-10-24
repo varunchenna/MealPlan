@@ -1,0 +1,12 @@
+<!-- Search Bar -->
+<app-recipe></app-recipe>
+<div class="search-container">
+    <input type="text" placeholder="Search for recipes" [(ngModel)]="searchQuery" class="search-input">
+    <button (click)="searchRecipes()" class="search-button">
+        Search
+    </button>
+</div>
+
+<header>
+    <h2>My Food</h2>
+</header>

@@ -1,0 +1,29 @@
+<div class="container" >
+    <div class="sidebar" >
+        <div class="profile">
+            <img src="https://media.istockphoto.com/id/1432226243/photo/happy-young-woman-of-color-smiling-at-the-camera-in-a-studio.webp?s=1024x1024&w=is&k=20&c=eBNzZ9PJ9nNHXoWP-TqFVHOZEjL_F260wMyQK9mKffc="
+                alt="Profile Picture" class="profile-pic">
+            <label for="file-input" class="file-label">
+                <i class="fa fa-camera"></i> Change Profile Picture
+            </label>
+            <input type="file" id="file-input" class="file-input" (change)="onFileSelected($event)">
+        </div>
+        <nav>
+            <ul>
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/generate-calories">Generate Calories</a></li>
+                <li><a routerLink="/meal-plan">Meal Plan</a></li>
+                <li><a routerLink="/recipe">Recipe</a></li>
+                <li><a routerLink="/profile">Profile</a></li>
+                <!-- <li><a routerLink="/feedback">Feedback</a></li> -->
+                <!-- <li><a routerLink="/account-settings">Account Settings</a></li>
+            <li><a (click)="logout()">Logout</a></li> -->
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+        <!-- <h3>Router Works!!</h3>
+        <app-notification></app-notification> -->
+    </div>
+</div>

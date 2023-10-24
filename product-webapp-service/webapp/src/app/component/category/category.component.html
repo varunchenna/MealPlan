@@ -1,0 +1,34 @@
+<app-recipe></app-recipe>
+<div class="search-container">
+  <input type="text" placeholder="Search for recipes" class="search-input">
+  <button class="search-button">
+    Search
+  </button>
+</div>
+<header>
+  <h2>Categories</h2>
+</header>
+
+<div class="card-container">
+  <!-- <div class="card" *ngFor="let category of categories"> -->
+    <div class="card" *ngFor="let category of categories | paginate: { itemsPerPage: pageSize, currentPage: page }"><img
+        [src]="category.strCategoryThumb" alt="{{ category.strCategory }}" />
+      <div class="card-content">
+        <h3>{{ category.strCategory }}</h3>
+        <p *ngIf="!category.showFullDescription">{{ category.strCategoryDescription | slice: 0:100 }}...</p>
+        <p *ngIf="category.showFullDescription">{{ category.strCategoryDescription }}</p>
+        <!-- Move the "Read More" button to the bottom right corner -->
+        <button class="btn btn-link read-more" (click)="openDescriptionModal(category)">
+          Read More
+        </button>
+      </div>
+    </div>
+
+  <!-- </div> -->
+</div>
+
+
+
+
+<!-- Add pagination controls -->
+<pagination-controls (pageChange)="page = $event"></pagination-controls>

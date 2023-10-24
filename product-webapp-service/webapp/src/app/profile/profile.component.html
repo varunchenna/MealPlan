@@ -1,0 +1,34 @@
+<div class="profile">
+  <!-- Profile Header -->
+  <h2>User Profile</h2>
+
+  <!-- Profile Picture -->
+  <div class="profile-pic">
+    <img src="https://media.istockphoto.com/id/1432226243/photo/happy-young-woman-of-color-smiling-at-the-camera-in-a-studio.jpg?s=1024x1024&w=is&k=20&c=eBNzZ9PJ9nNHXoWP-TqFVHOZEjL_F260wMyQK9mKffc="
+         alt="Profile Picture" class="profile-pic-img">
+    <label for="file-input" class="file-label">
+      <i class="fa fa-camera"></i> Change Profile Picture
+    </label>
+    <input type="file" id="file-input" class="file-input" (change)="onFileSelected($event)">
+  </div>
+
+  <!-- Profile Information -->
+  <div class="profile-info">
+    <h3>User Information</h3>
+    <!-- Display user information here -->
+    <p><strong>Name:</strong> John Doe</p>
+    <p><strong>Email:</strong> john.doe@example.com</p>
+    <p><strong>Location:</strong> New York, USA</p>
+    <!-- Add more user information fields as needed if req -->
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="profile-nav">
+    <li><a routerLink="/profile" routerLinkActive="active"><i class="fa fa-user"></i> Profile</a></li>
+    <li><a routerLink="/profile/account-settings" routerLinkActive="active"><i class="fa fa-cog"></i> Account Settings</a></li>
+    <li><a (click)="logout()"><i class="fa fa-sign-out"></i> logout</a></li>
+  </ul>
+
+  <!-- Child Routes -->
+  <router-outlet></router-outlet>
+</div>

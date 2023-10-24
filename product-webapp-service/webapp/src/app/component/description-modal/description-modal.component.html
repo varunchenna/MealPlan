@@ -1,0 +1,18 @@
+<div class="modal-container">
+    <!-- Modal content here -->
+    <h1>{{ data.strCategory }}</h1>
+    <button type="button" class="close" (click)="closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-body">
+      <!-- Content of the modal -->
+      <!-- Description -->
+    <p>{{ data.strCategoryDescription }}</p>
+    <img [src]="data.strCategoryThumb" alt="{{ data.strCategory }}" />
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+    </div>
+  </div>
+  
+  

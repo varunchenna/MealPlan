@@ -1,0 +1,59 @@
+<app-recipe></app-recipe>
+<!-- Search Bar -->
+<div class="search-container">
+  <input type="text" placeholder="Search for recipes" [(ngModel)]="searchQuery" class="search-input">
+  <button (click)="getMeal()" class="search-button">
+    Search
+  </button>
+</div>
+
+
+<header>
+  <h2>Search recipe</h2>
+</header>
+
+
+<!-- Display the list of recipe cards -->
+<div class="card-container">
+  <div class="card" *ngFor="let recipe of recipes | paginate: { itemsPerPage: pageSize, currentPage: page }">
+    <img [src]="recipe.strMealThumb" alt="{{ recipe.strMeal }}" class="recipe-image">
+    <h3>{{ recipe.strMeal }}</h3>
+    <h3>Category : {{recipe.strCategory}}</h3>
+
+ <!-- Add to favorites button -->
+ <!-- <button (click)="addToFavorites(recipe)" class="add-to-favorites-button">Add</button> -->
+  <!-- Add to favorites button -->
+  <button (click)="addToFavorites(recipe)"
+  class="add-to-favorites-button"
+  [disabled]="recipe.isFavorite"> <!-- Disable the button if it's already a favorite -->
+  {{ recipe.isFavorite ? 'Added' : 'Add' }} <!-- Change button text based on isFavorite flag -->
+</button>
+
+
+    <!-- You can add more details about the recipe here if needed -->
+    
+  </div>
+</div>
+
+<!-- Show a message if no results were found -->
+<div class="no-results" *ngIf="recipes.length === 0 && showApiConnectionError==false">
+  No results found
+</div>
+
+
+<div class="api-connection-error" *ngIf="showApiConnectionError">
+  <h3 class="error-title">API Connection Error</h3>
+  <p class="error-description">
+    Sorry, we are unable to connect to the server at the moment. This may be due to a network problem or issues with our
+    service.
+  </p>
+  <p class="error-description">
+    Please check your internet connection and try again. If the issue persists, it may be on our end, and we are working
+    to resolve it.
+  </p>
+</div>
+
+
+
+<pagination-controls (pageChange)="page = $event"
+  *ngIf="recipes.length>=8 && showApiConnectionError == false"></pagination-controls>
